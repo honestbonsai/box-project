@@ -25,10 +25,10 @@ contract ComplexInputs {
     )
         public
         returns (
-            uint256 storedData,
-            uint256 storeduint1,
-            bytes16 string1,
-            bytes32 string2
+            uint256,
+            uint256,
+            bytes16,
+            bytes32
         )
     {
         storedData = x;
