@@ -22,12 +22,10 @@ contract SimpleStorage {
         uint256 storeduint1letsmakethisareallylongnameyay,
         bytes16 string1yayanotherlongname,
         bytes32 string2andanotherone,
-        string string3andanother
     ) public {
         storedData = x;
         storeduint1 = storeduint1letsmakethisareallylongnameyay;
         string1 = string1yayanotherlongname;
         string2 = string2andanotherone;
-        string3 = string3andanother;
     }
 }
