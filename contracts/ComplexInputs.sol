@@ -28,6 +28,6 @@ contract ComplexInputs {
         string1 = string1yayanotherlongname;
         string2 = string2andanotherone;
 
-        return (storedData, storeduint1, string1, string2)
+        return (storedData, storeduint1, string1, string2);
     }
 }
