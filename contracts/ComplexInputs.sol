@@ -50,4 +50,12 @@ contract ComplexInputs {
     ) internal pure returns (uint256 transactionId) {
         return 0;
     }
+
+    function addTransactionPublic(
+        address destination,
+        uint256 value,
+        bytes memory data
+    ) public pure returns (uint256 transactionId, string memory string4) {
+        return (0, string4);
+    }
 }
