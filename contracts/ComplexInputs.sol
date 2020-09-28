@@ -47,7 +47,7 @@ contract ComplexInputs {
         address destination,
         uint256 value,
         bytes memory data
-    ) internal returns (uint256 transactionId) {
+    ) internal pure returns (uint256 transactionId) {
         return 0;
     }
 }
