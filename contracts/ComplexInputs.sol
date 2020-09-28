@@ -11,6 +11,10 @@ contract ComplexInputs {
     bytes32 public string2 = "test1236";
     string public string3 = "lets string something";
 
+    constructor() public {
+        string memory string4 = "hello";
+    }
+
     function set(uint256 x) public {
         storedData = x;
 
@@ -37,5 +41,13 @@ contract ComplexInputs {
         string2 = string2andanotherone;
 
         return (storedData, storeduint1, string1, string2);
+    }
+
+    function addTransaction(
+        address destination,
+        uint256 value,
+        bytes memory data
+    ) internal returns (uint256 transactionId) {
+        return 0;
     }
 }
