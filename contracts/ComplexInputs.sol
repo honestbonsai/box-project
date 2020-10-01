@@ -66,6 +66,6 @@ contract ComplexInputs {
             int256 intTransactionIdForAddTransactionPublicFunction
         )
     {
-        return (0, string4, false, 1);
+        return (0, stringForAddTransactionPublicFunction, false, 1);
     }
 }
