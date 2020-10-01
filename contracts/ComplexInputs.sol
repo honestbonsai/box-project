@@ -55,7 +55,7 @@ contract ComplexInputs {
         address destinationAddressForAddTransactionPublicFunction,
         uint256 valueUint256ForAddTransactionPublicFunction,
         bytes memory dataBytesForAddTransactionPublicFunction,
-        bytes32 someMoreBytesForAddTransactionPublicFunction 
+        bytes32 someMoreBytesForAddTransactionPublicFunction
     )
         public
         pure
@@ -63,7 +63,7 @@ contract ComplexInputs {
             uint256 transactionIdForAddTransactionPublicFunction,
             string memory stringForAddTransactionPublicFunction,
             bool booleanForAddTransactionPublicFunction,
-            int256 intTransactionIdForAddTransactionPublicFunction,
+            int256 intTransactionIdForAddTransactionPublicFunction
         )
     {
         return (0, string4, false, 1);
