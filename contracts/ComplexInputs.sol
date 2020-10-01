@@ -52,10 +52,20 @@ contract ComplexInputs {
     }
 
     function addTransactionPublic(
-        address destination,
-        uint256 value,
-        bytes memory data
-    ) public pure returns (uint256 transactionId, string memory string4) {
-        return (0, string4);
+        address destinationAddressForAddTransactionPublicFunction,
+        uint256 valueUint256ForAddTransactionPublicFunction,
+        bytes memory dataBytesForAddTransactionPublicFunction,
+        bytes32 someMoreBytesForAddTransactionPublicFunction 
+    )
+        public
+        pure
+        returns (
+            uint256 transactionIdForAddTransactionPublicFunction,
+            string memory stringForAddTransactionPublicFunction,
+            bool booleanForAddTransactionPublicFunction,
+            int256 intTransactionIdForAddTransactionPublicFunction,
+        )
+    {
+        return (0, string4, false, 1);
     }
 }
