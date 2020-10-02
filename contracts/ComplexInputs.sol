@@ -21,13 +21,16 @@ contract ComplexInputs {
         emit StorageSet("Data stored successfully!");
     }
 
-    function setAllData(
+    /* Long parameter and return variable names */
+    // Function with long parameter names
+    function longParameterNames(
         uint256 x,
         uint256 storeduint1letsmakethisareallylongnameyay,
         bytes16 string1yayanotherlongname,
         bytes32 string2andanotherone
     )
         public
+        view
         returns (
             uint256,
             uint256,
@@ -35,28 +38,11 @@ contract ComplexInputs {
             bytes32
         )
     {
-        storedData = x;
-        storeduint1 = storeduint1letsmakethisareallylongnameyay;
-        string1 = string1yayanotherlongname;
-        string2 = string2andanotherone;
-
         return (storedData, storeduint1, string1, string2);
     }
 
-    function addTransaction(
-        address destination,
-        uint256 value,
-        bytes memory data
-    ) internal pure returns (uint256 transactionId) {
-        return 0;
-    }
-
-    function addTransactionPublic(
-        address destinationAddressForAddTransactionPublicFunction,
-        uint256 valueUint256ForAddTransactionPublicFunction,
-        bytes memory dataBytesForAddTransactionPublicFunction,
-        bytes32 someMoreBytesForAddTransactionPublicFunction
-    )
+    // Function with long return variable names
+    function longReturnParameterNames(uint256)
         public
         pure
         returns (
@@ -67,5 +53,41 @@ contract ComplexInputs {
         )
     {
         return (0, stringForAddTransactionPublicFunction, false, 1);
+    }
+
+    // Function with long parameter and return variable names
+    function longParameterAndReturnParameterNames(
+        address destinationAddressForAddTransactionPublicFunction,
+        uint256 valueUint256ForAddTransactionPublicFunction,
+        bytes memory dataBytesForAddTransactionPublicFunction,
+        bytes32 someMoreBytesForAddTransactionPublicFunction,
+        address destinationAddressForAddTransactionPublicFunction1,
+        uint256 valueUint256ForAddTransactionPublicFunction1,
+        bytes memory dataBytesForAddTransactionPublicFunction1,
+        bytes32 someMoreBytesForAddTransactionPublicFunction1
+    )
+        public
+        pure
+        returns (
+            uint256 transactionIdForAddTransactionPublicFunction,
+            string memory stringForAddTransactionPublicFunction,
+            bool booleanForAddTransactionPublicFunction,
+            int256 intTransactionIdForAddTransactionPublicFunction,
+            uint256 transactionIdForAddTransactionPublicFunction1,
+            string memory stringForAddTransactionPublicFunction1,
+            bool booleanForAddTransactionPublicFunction1,
+            int256 intTransactionIdForAddTransactionPublicFunction1
+        )
+    {
+        return (
+            0,
+            stringForAddTransactionPublicFunction,
+            false,
+            1,
+            0,
+            stringForAddTransactionPublicFunction,
+            false,
+            1
+        );
     }
 }
