@@ -37,7 +37,8 @@ contract ComplexInputs {
         uint256 storeduint1letsmakethisareallylongnameyay,
         bytes16 string1yayanotherlongname,
         bytes32 string2andanotherone,
-        DeviceData memory testStruct
+        DeviceData memory testStruct,
+        DeviceData[][] memory testStructArray
     )
         public
         view
