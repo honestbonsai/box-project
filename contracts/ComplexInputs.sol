@@ -41,6 +41,16 @@ contract ComplexInputs {
         return (storedData, storeduint1, string1, string2);
     }
 
+    // Function with long parameter names & no return parameters
+    function longParameterNamesNoReturnParameters(
+        uint256 x,
+        uint256 storeduint1letsmakethisareallylongnameyay,
+        bytes16 string1yayanotherlongname,
+        bytes32 string2andanotherone
+    ) public {
+        storedData = x;
+    }
+
     // Function with long return variable names
     function longReturnParameterNames(uint256)
         public
