@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.4.21 <0.7.0;
+pragma experimental ABIEncoderV2;
 
 contract ComplexInputs {
     event StorageSet(string _message);
@@ -10,6 +11,14 @@ contract ComplexInputs {
     bytes16 public string1 = "test1";
     bytes32 public string2 = "test1236";
     string public string3 = "lets string something";
+
+    DeviceData[] public deviceDataArray;
+
+    struct DeviceData {
+        string deviceBrand;
+        string deviceYear;
+        string batteryWearLevel;
+    }
 
     constructor() public {
         string memory string4 = "hello";
@@ -27,7 +36,8 @@ contract ComplexInputs {
         uint256 x,
         uint256 storeduint1letsmakethisareallylongnameyay,
         bytes16 string1yayanotherlongname,
-        bytes32 string2andanotherone
+        bytes32 string2andanotherone,
+        DeviceData memory testStruct
     )
         public
         view
@@ -54,15 +64,22 @@ contract ComplexInputs {
     // Function with long return variable names
     function longReturnParameterNames(uint256)
         public
-        pure
+        view
         returns (
             uint256 transactionIdForAddTransactionPublicFunction,
             string memory stringForAddTransactionPublicFunction,
             bool booleanForAddTransactionPublicFunction,
-            int256 intTransactionIdForAddTransactionPublicFunction
+            int256 intTransactionIdForAddTransactionPublicFunction,
+            DeviceData[] memory anArray
         )
     {
-        return (0, stringForAddTransactionPublicFunction, false, 1);
+        return (
+            0,
+            stringForAddTransactionPublicFunction,
+            false,
+            1,
+            deviceDataArray
+        );
     }
 
     // Function with long parameter and return variable names
