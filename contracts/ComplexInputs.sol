@@ -138,7 +138,7 @@ contract ComplexInputs {
         uint184[99][] memory programTwo,
         bool[4][194] memory systemTwo,
         S_6 memory microchip
-    ) public pure returns (bool[4][194][] memory test) {
-        return (test);
+    ) public pure returns (bool[4][194][] memory testBools) {
+        return (testBools);
     }
 }
