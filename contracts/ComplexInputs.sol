@@ -19,18 +19,9 @@ contract ComplexInputs {
         string deviceYear;
         string batteryWearLevel;
     }
-
-    struct S_4 {
-        bool[] bus;
-        uint208[][][9][][] card;
-        bool[122] array;
-        uint136[135][] matrix;
-    }
-
     struct S_5 {
         bool[60] driver;
         bool alarm;
-        S_4[][9] microchip;
         uint104[][] firewall;
     }
 
@@ -142,11 +133,10 @@ contract ComplexInputs {
     }
 
     function test(
-        address[79][8][130] memory program,
+        address[79] memory program,
         string[][2][122] memory capacitor,
-        uint184[99][241] memory programTwo,
-        bytes12[128][194][] memory system,
-        bool[4][194][] memory systemTwo,
+        uint184[99][] memory programTwo,
+        bool[4][194] memory systemTwo,
         S_6 memory microchip
     ) public pure returns (bool[4][194][] memory test) {
         return (test);
