@@ -62,8 +62,7 @@ contract BypassCapacitor {
         string[][207] memory feed,
         bytes31[][] memory panel,
         bytes[22][41][4] memory capacitor,
-        uint88[][10] memory driver,
-        uint48 alarm
+        uint88[][10] memory driver
     )
         public
         returns (
