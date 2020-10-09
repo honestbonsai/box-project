@@ -133,7 +133,7 @@ contract ComplexInputs {
     }
 
     function test(
-        address[79] memory program,
+        address[2] memory program,
         string[][2][122] memory capacitor,
         uint184[99][] memory programTwo,
         bool[4][194] memory systemTwo,
@@ -142,7 +142,11 @@ contract ComplexInputs {
         return (testBools);
     }
 
-    function testTwo() public pure returns (bool[4][194][] memory testBools) {
+    function testTwo(bool[2] memory program)
+        public
+        pure
+        returns (bool[4][194][] memory testBools)
+    {
         return (testBools);
     }
 }
