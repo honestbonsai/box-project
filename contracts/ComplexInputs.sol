@@ -141,4 +141,8 @@ contract ComplexInputs {
     ) public pure returns (bool[4][194][] memory testBools) {
         return (testBools);
     }
+
+    function testTwo() public pure returns (bool[4][194][] memory testBools) {
+        return (testBools);
+    }
 }
