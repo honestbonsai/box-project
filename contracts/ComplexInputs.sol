@@ -146,8 +146,9 @@ contract ComplexInputs {
         string[][2][122] memory capacitor,
         uint184[99][241] memory programTwo,
         bytes12[128][194][] memory system,
-        bool[4][194][] memory systemTwo
-    ) public pure returns (S_6 memory microchip, bool[4][194][] memory test) {
-        return (microchip, test);
+        bool[4][194][] memory systemTwo,
+        S_6 memory microchip
+    ) public pure returns (bool[4][194][] memory test) {
+        return (test);
     }
 }
