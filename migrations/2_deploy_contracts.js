@@ -9,5 +9,5 @@ module.exports = function (deployer) {
   deployer.deploy(TutorialToken);
   deployer.deploy(ComplexStorage);
   deployer.deploy(ComplexInputs);
-  deployer.deployer(BypassCapacitor);
+  deployer.deploy(BypassCapacitor);
 };
