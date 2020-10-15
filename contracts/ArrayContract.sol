@@ -10,6 +10,7 @@ contract ArrayContract {
     // itself is an array.
     // Data location for all state variables is storage.
     bool[2][] m_pairsOfFlags;
+    string[2][] m_pairsOfStrings;
 
     // newPairs is stored in memory - the only possibility
     // for public contract function arguments
@@ -45,6 +46,16 @@ contract ArrayContract {
         // access to a non-existing index will throw an exception
         m_pairsOfFlags[index][0] = flagA;
         m_pairsOfFlags[index][1] = flagB;
+    }
+
+    function setString(
+        uint256 index,
+        string memory stringA,
+        string memory stringB
+    ) public {
+        // access to a non-existing index will throw an exception
+        m_pairsOfStrings[index][0] = stringA;
+        m_pairsOfStrings[index][1] = stringB;
     }
 
     function changeFlagArraySize(uint256 newSize) public {
