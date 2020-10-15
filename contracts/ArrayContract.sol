@@ -48,14 +48,10 @@ contract ArrayContract {
         m_pairsOfFlags[index][1] = flagB;
     }
 
-    function setString(
-        uint256 index,
-        string memory stringA,
-        string memory stringB
-    ) public {
-        // access to a non-existing index will throw an exception
-        m_pairsOfStrings[index][0] = stringA;
-        m_pairsOfStrings[index][1] = stringB;
+    function setAllFlagPairs(string[2][] memory newPairs) public {
+        // assignment to a storage array performs a copy of ``newPairs`` and
+        // replaces the complete array ``m_pairsOfFlags``.
+        m_pairsOfStrings = newPairs;
     }
 
     function changeFlagArraySize(uint256 newSize) public {
