@@ -48,6 +48,11 @@ contract ArrayContract {
         m_pairsOfFlags[index][1] = flagB;
     }
 
+    function setFlagPairFn(function() external setNewFlagPair) public {
+        // access to a non-existing index will throw an exception
+        setNewFlagPair();
+    }
+
     function setAllFlagPairs(string[2][] memory newPairs) public {
         // assignment to a storage array performs a copy of ``newPairs`` and
         // replaces the complete array ``m_pairsOfFlags``.
