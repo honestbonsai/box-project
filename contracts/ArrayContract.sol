@@ -49,7 +49,6 @@ contract ArrayContract {
     }
 
     function setFlagPairFn(function() external setNewFlagPair) public {
-        // access to a non-existing index will throw an exception
         setNewFlagPair();
     }
 
