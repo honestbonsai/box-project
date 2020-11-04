@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.4.21 <0.7.0;
+pragma experimental ABIEncoderV2;
 
 contract ComplexStorage {
     uint public storeduint1 = 15;
@@ -40,5 +41,11 @@ contract ComplexStorage {
 
         deviceDataArray.push(structs1[address1]);
         deviceDataArray.push(structs1[address2]);
+    }
+
+    function setStruct(
+        DeviceData memory myDevice
+    ) public {
+        singleDD = myDevice;
     }
 }
