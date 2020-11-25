@@ -13,7 +13,18 @@ contract UnnamedInputs {
         emit StorageSet("Data stored successfully!");
     }
 
-    function multipleUnnamedParameters(uint256[1] memory, uint256) public {
+    function multipleUnnamedParameters(uint256, uint256) public {
+        emit StorageSet("Data stored successfully!");
+    }
+
+    function multipleUnnamedArrayParameters(
+        uint256[1] memory,
+        uint256[1] memory
+    ) public {
+        emit StorageSet("Data stored successfully!");
+    }
+
+    function multipleMixedUnnamedParameters(uint256[1] memory, uint256) public {
         emit StorageSet("Data stored successfully!");
     }
 
