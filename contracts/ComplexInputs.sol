@@ -26,11 +26,8 @@ contract ComplexInputs {
     }
 
     struct S_6 {
-        bytes21[188] card;
-        uint184[99][241] program;
-        bytes12[128][194][] system;
-        S_5 hardDrive;
-        address[] monitor;
+        string card;
+        address[1] monitor;
     }
 
     constructor() public {
@@ -143,6 +140,14 @@ contract ComplexInputs {
     }
 
     function testTwo(bool[2] memory program)
+        public
+        pure
+        returns (bool[4][194][] memory testBools)
+    {
+        return (testBools);
+    }
+
+    function testThree(S_6 memory microchip)
         public
         pure
         returns (bool[4][194][] memory testBools)
