@@ -5,7 +5,7 @@ const ArrayContract = artifacts.require('ArrayContract');
 // const ComplexStorage = artifacts.require("ComplexStorage");
 const ComplexInputs = artifacts.require('ComplexInputs');
 // const SimpleInputs = artifacts.require("SimpleInputs");
-// const CrowdFunding = artifacts.require("CrowdFunding");
+const CrowdFunding = artifacts.require("CrowdFunding");
 
 module.exports = function (deployer) {
     deployer.deploy(SimpleStorage);
@@ -15,5 +15,5 @@ module.exports = function (deployer) {
     // deployer.deploy(ComplexStorage);
     deployer.deploy(ComplexInputs);
     // deployer.deploy(SimpleInputs);
-    // deployer.deploy(CrowdFunding);
+    deployer.deploy(CrowdFunding);
 };
